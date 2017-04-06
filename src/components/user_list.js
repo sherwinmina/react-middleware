@@ -11,7 +11,7 @@ class UserList extends Component {
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
         <p className="card-text">Chocalate Mansion</p>
-        <a className="btn btn-primary"></a>
+        <a className="btn btn-primary">Email</a>
       </div>
     );
   }
