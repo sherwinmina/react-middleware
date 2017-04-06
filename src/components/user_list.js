@@ -7,7 +7,7 @@ class UserList extends Component {
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
         <p className="card-text">Chocalate Mansion</p>
-        <a href="" className="btn btn-primary"></a>
+        <a className="btn btn-primary"></a>
       </div>
     );
   }
@@ -20,3 +20,9 @@ class UserList extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return { users: state.users };
+}
+
+export default connect (mapStateToProps)(UserList);
