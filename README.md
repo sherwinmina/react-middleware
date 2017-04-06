@@ -1,1 +1,1 @@
-# ReduxSimpleStarter
+# React and redux middlewares
