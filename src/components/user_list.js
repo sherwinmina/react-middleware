@@ -10,14 +10,14 @@ class UserList extends Component {
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
-        <p className="card-text">Chocalate Mansion</p>
-        <a className="btn btn-primary">Email</a>
+        <p className="card-text">{user.company.name}</p>
+        <a className="btn btn-primary" href={user.website}>Email</a>
       </div>
     );
   }
 
   render() {
-    console.log(this.props.users.name);
+    console.log(this.props.users);
     return (
       <div className="user-list" >
         {this.props.users.map(this.renderUser)}
